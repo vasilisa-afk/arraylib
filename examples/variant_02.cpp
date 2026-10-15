@@ -9,17 +9,18 @@ int main() {
 
     std::cout << std::fixed << std::setprecision(2);
     std::cout << "Количество контрольных работ: " << n << "\n\n";
-
     std::cout << "Средний балл: "            << arr_average(scores, n) << "\n";
     std::cout << "Максимальный балл: "       << arr_max(scores, n)     << "\n";
     std::cout << "Минимальный балл: "        << arr_min(scores, n)     << "\n";
+
 
     int count_ge_80 = 0;
     for (std::size_t i = 0; i < n; ++i) {
         if (scores[i] >= 80) ++count_ge_80;
     }
     std::cout << "Результатов не ниже 80: "  << count_ge_80            << "\n";
+
     std::cout << "Медиана результатов: "     << arr_median(scores, n)  << "\n";
 
     return 0;
-}
+} 
